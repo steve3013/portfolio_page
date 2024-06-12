@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portfolio Website Steve</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+  <!-- linking css file -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    
+    <!-- navbar, a bootstrap pre-built component -->
+    <!-- https://getbootstrap.com/docs/5.3/components/navbar/ -->
+
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll navbar-white" >  <!-- ...  navbar-dark to turn navbar into white -->
+        <div class="container">
+            <a class="navbar-brand" href="#">Data Science Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                    <!--    <a class="nav-link" href="#services">Services</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    
+    </nav>
+
+    <!-- main banner, pre-built layout bootstrap -->
+    <!-- https://getbootstrap.com/docs/5.3/layout/containers/ -->
+    <!-- https://getbootstrap.com/docs/5.3/layout/grid/ -->
+
+    <section class="container-fluid section bgimage" id="home">
+        <div class="fade-in-image">
+        <div class="row" >
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero_text">
+                
+                <h2 class="hero_title">Hi, I am Stiv</h2>
+                
+                <p class="hero_desc">An IT expert specialised in Data Science, Machine Learning and Artificial Intelligence Applications.</p>
+            
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- about section-->
+
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center">About Me</h1>
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                  <!--  <img src="images/chinoistug.jpg" class= "imageAboutPage" alt="";> -->
+                   
+                </div>
+             
+                <div class="container">
+                    <h1 class="heading" data-target-resolver></h1>
+                    <p> I enjoy working with data and technology using tools like Python (NumPy, Pandas, Matplotlib, Scikit-learn, Jupyter Notebook) for efficient data manipulation and analysis.
+                        I also like SQL databases, because they enable precise data querying. During my work I also use Git version control to ensure smooth collaboration in a team. 
+                        At the moment I am working with Tableau, which allows me to create compelling visual narratives from data.
+                        I also possess notable Linux experience, including bash scripting, that helps automate tasks and manage systems.                    
+                    </p>
+               
+            </div>
+    </section>
+   
+    <!-- portfolio section-->
+
+    <section id="portfolio">
+        <div class="container mt-3">
+            <h1 class="text-center">Portfolio</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/edaanalysis.png" alt="Card" image width="200" height="250">
+                        <div class="card-body">
+                            <h4 class="card-title">Data Exploration with Pandas</h4>
+                            <p class="card-text">
+                                Conducting EDA on BTC daily prices from 12.11.2021 to 18.03.2024. This involves visualizing trends, identifying patterns, and assessing volatility. Using pandas for data manipulation and matplotlib for plotting, we aim to uncover insights into BTC's market behavior during this timeframe.</p>
+                            <div class="text-center">
+                                <a href="https://github.com/steve3013/python/tree/main/bitcoin_eda" class="btn btn-dark class">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/pythonvsjava.png" alt="Card" image width="200" height="250">
+                        <div class="card-body">
+                            <h4 class="card-title">Data Visualization with Matplotlib</h4>
+                            <p class="card-text">
+                                Using matplotlib for data visualization, we can effectively compare the usage of various programming languages: Assembly, C, C#, C++, Delphi, Go, Java, JavaScript, Perl, PHP, Python, R, Ruby, and Swift. This helps in understanding their popularity and trends.</p>
+                            <div class="text-center">
+                                <a href="https://github.com/steve3013/python/tree/main/programming_languages" class="btn btn-dark class">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/NumpyArrays.png" alt="Card" image width="200" height="250">
+                        <div class="card-body">
+                            <h4 class="card-title">Computation with NumPy</h4>
+                            <p class="card-text">
+                                In my recent project, I used NumPy and N-dimensional arrays to analyze and process large datasets efficiently. NumPy's powerful mathematical functions and support for complex operations streamlined the workflow, highlighting its importance in data science and machine learning tasks.</p>
+                            <div class="text-center">
+                                <a href="https://github.com/steve3013/python/tree/main/computation%20with%20numpy" class="btn btn-dark class">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/linearregression.png" alt="Card" image width="200" height="250">
+                        <div class="card-body">
+                            <h4 class="card-title">Linear Regression</h4>
+                            <p class="card-text">
+                                Employing Seaborn for linear regression analysis, I adeptly delved into variable relationships. Seaborn's user-friendly visualization tools are pivotal in data exploration and predictive modeling, empowering informed decisions from intricate datasets. Its robust features enable nuanced decision-making.</p>
+                            <div class="text-center">
+                                <a href="https://github.com/steve3013/python/tree/main/seaborn_regression_ipynb" class="btn btn-dark class">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/nobelprize.png" alt="Card" image width="200" height="250">
+                        <div class="card-body">
+                            <h4 class="card-title">Analyzing Nobel Prize</h4>
+                            <p class="card-text">
+                                Analyzing Nobel Prize data with Plotly, Matplotlib, and Seaborn involves visualizing trends. Plotly offers interactive plots, Matplotlib customizes them, Seaborn simplifies them, 
+                                revealing award frequency and gender diversity patterns. The analysis deepens insights into academic achievement dynamics.</p>
+                            <div class="text-center">
+                                <a href="https://github.com/steve3013/python/tree/main/nobel%20prize%20analysis" class="btn btn-dark class">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/housingprices.png" alt="Card" image width="200" height="250">
+                        <div class="card-body">
+                            <h4 class="card-title">Predict Housing Prices</h4>
+                            <p class="card-text">
+                                Predicting house prices with Scikit-learn involves features like room count, distance to employment centers, area affluence, and student-teacher ratios. Visualizing with Seaborn, Matplotlib, and Plotly aids in gaining valuable insights into price determinants for making informed real estate decisions.</p>
+                            <div class="text-center">
+                                <a href="https://github.com/steve3013/python/tree/main/predicting%20housing%20prices" class="btn btn-dark class">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <br>
+           <!-- <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/riskmanagement2.png" alt="Card" image width="200" height="250">
+                        <div class="card-body">
+                            <h4 class="card-title">Jira Forge App</h4>
+                            <p class="card-text">The Jira Forge App that I have created is a Risk Management Plugin that can be installed on Jira Confluence.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-dark class">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/crypto.png" alt="Card" image width="200" height="250">
+                        <div class="card-body">
+                            <h4 class="card-title">Cryptocurrency Analysis</h4>
+                            <p class="card-text">I also offer technical as well as fundamental price analysis of various assets, e.g. BTC, ETH, ADA, SOL, DOT, DOGE, etc.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-dark class">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/itsupport.jpeg" alt="Card" image width="200" height="250">
+                        <div class="card-body">
+                            <h4 class="card-title">IT Support</h4>
+                            <p class="card-text">In the domain of IT support I offer customization of scripts, installation of virtual machines, cloud setups, etc.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-dark class">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section> -->
+
+    <!-- contact section-->
+
+    <section id="contact">
+        <div class="container mt-3 contactContent">
+            <h1 class="text-center">Contact Me</h1>
+
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+
+                    <div style="text-decoration:none; overflow:hidden;max-width:100%;width:500px;height:500px;"><div id="google-maps-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Zürich,+Switzerland&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="google-maps-html" href="https://www.bootstrapskins.com/themes" id="grab-map-authorization">premium bootstrap themes</a><style>#google-maps-canvas img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>
+
+
+
+
+
+
+                  
+            </div>
+
+                <div class="col-lg-6">
+                    <!-- form fields -->
+                    <form>
+                        <input type="text" class="form-control form-control-lg" placeholder="Name">
+                        <input type="email" class="form-control mt-3" placeholder="Email">
+                        <input type="text" class="form-control mt-3" placeholder="Subject">
+                        <div class="mb-3 mt-3">
+                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
+                        </div>
+                    </form>
+                    <a href="mailto:s_paskali@proton.me" class="btn btn-dark class">Mail Me</a>
+                    <a href="tel:+41779661299" class="btn btn-dark class">Call Me</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section-->
+    <footer id="footer">
+        <div class="container-fluid">
+            <!-- social media icons -->
+            <div class="social-icons mt-4">
+               <!-- <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a> -->
+               <!-- <a href="https://www.instagram.com/kokonu" target="_blank"><i class="fab fa-instagram"></i></a> -->
+                 <!-- <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> -->
+                <a href="https://www.linkedin.com/in/steve-p-383109300/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/steve3013" target="_blank"><i class="fab fa-github"></i></a>
+                <!-- <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a> -->
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- load javascript after loading all html content -->
+    <script src="script/script.js"></script>
+   
+</body>
+
+</html>
